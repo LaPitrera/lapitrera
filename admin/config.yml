@@ -2,17 +2,36 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: 'static/images/uploads'
-public_folder: '/images/uploads'
+media_folder: "static/img"
+public_folder: "/img"
 
 collections:
-  - name: 'camisetas'
-    label: 'Camisetas'
-    folder: 'content/camisetas'
+  - name: "camisetas"
+    label: "Camisetas"
+    folder: "content/camisetas"
     create: true
-    slug: '{{slug}}'
+    slug: "{{slug}}"
     fields:
-      - { label: 'Título', name: 'title', widget: 'string' }
-      - { label: 'Precio', name: 'precio', widget: 'number' }
-      - { label: 'Imagen', name: 'image', widget: 'image' }
-      - { label: 'Descripción', name: 'body', widget: 'markdown' }
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Precio", name: "precio", widget: "number" }
+      - { label: "Imagen", name: "image", widget: "image" }
+      - { label: "Descripción", name: "body", widget: "markdown" }
+
+  - name: "temas"
+    label: "Temas"
+    folder: "content/temas"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nombre del tema", name: "title", widget: "string" }
+      - { label: "Descripción", name: "body", widget: "markdown" }
+
+  - name: "promos"
+    label: "Ganga con estilazo"
+    folder: "content/promos"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Frase destacada", name: "title", widget: "string" }
+      - { label: "Imagen", name: "image", widget: "image" }
+      - { label: "Texto", name: "body", widget: "markdown" }

@@ -1,2 +1,2 @@
 # La Pitrera
-Sitio web oficial de La Pitrera.
+Web de camisetas con mensaje
