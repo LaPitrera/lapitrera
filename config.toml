@@ -1,4 +1,4 @@
 baseURL = "https://lapitrera.com/"
-languageCode = "es-es"
+languageCode = "es"
 title = "La Pitrera"
-theme = "tu-tema"  # Si estás usando uno, si no, omítelo
+theme = ""
