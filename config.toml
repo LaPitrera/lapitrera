@@ -1,4 +1,4 @@
 baseURL = "https://lapitrera.com/"
 languageCode = "es"
 title = "La Pitrera"
-theme = ""
+theme = "hugo-PaperMod"
