@@ -16,3 +16,22 @@ collections:
       - { label: "Descripción", name: "description", widget: "text" }
       - { label: "Precio", name: "price", widget: "string" }
       - { label: "Imagen", name: "image", widget: "image" }
+
+  - name: "temas"
+    label: "Temas"
+    folder: "content/temas"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nombre del tema", name: "title", widget: "string" }
+      - { label: "Descripción", name: "description", widget: "text" }
+
+  - name: "ganga"
+    label: "Ganga con estilazo"
+    folder: "content/ganga"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Oferta", name: "offer", widget: "string" }
+      - { label: "Imagen", name: "image", widget: "image" }
