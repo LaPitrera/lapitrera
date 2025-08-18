@@ -1,2 +1,2 @@
 # La Pitrera
-Web de camisetas con mensaje
+Web de camisetas con mensaje y más...
