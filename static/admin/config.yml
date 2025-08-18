@@ -33,5 +33,5 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Título", name: "title", widget: "string" }
-      - { label: "Oferta", name: "offer", widget: "string" }
-      - { label: "Imagen", name: "image", widget: "image" }
+      - { label: "Descripción", name: "description", widget: "text" }
+      - { label: "Imagen destacada", name: "image", widget: "image" }
