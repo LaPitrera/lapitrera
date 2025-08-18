@@ -15,5 +15,4 @@ collections:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Descripción", name: "description", widget: "text" }
       - { label: "Precio", name: "price", widget: "string" }
-      - { label: "Tema", name: "tema", widget: "select", options: ["Ciencias locas", "Filósofos idos", "¿Estudias o trabajas?", "Yo? Estudio y trabajo", "¡Busco curro!", "Catalanades profundas", "Españoladas profundas", "¿Qué me Queen?", "Socialmente inaceptable", "Dicen! Digo, Diego!", "Como lo lees", "Besito de rana"] }
       - { label: "Imagen", name: "image", widget: "image" }
