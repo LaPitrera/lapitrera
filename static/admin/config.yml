@@ -1,0 +1,34 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "camisetas"
+    label: "Camisetas"
+    folder: "content/camisetas"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descripción", name: "body", widget: "text" }
+
+  - name: "ganga"
+    label: "Ganga con estilazo"
+    folder: "content/ganga"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Mensaje", name: "body", widget: "text" }
+
+  - name: "temas"
+    label: "Temas"
+    folder: "content/temas"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nombre del tema", name: "title", widget: "string" }
+      - { label: "Descripción", name: "body", widget: "text" }
