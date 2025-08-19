@@ -1,13 +1,61 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
 collections:
-  - name: "camisetas"
-    label: "Camisetas"
-    folder: "content/camisetas"
+  - name: "catalanades"
+    label: "Catalanades"
+    folder: "content/camisetas/catalanades"
     create: true
     slug: "{{slug}}"
     fields:
       - { label: "Título", name: "title", widget: "string" }
-      - { label: "Descripción", name: "description", widget: "text" }
-      - { label: "Precio", name: "price", widget: "number" }
-      - { label: "Colección", name: "collection", widget: "select", options: ["filosofos-idos", "catalanades-profundas", "la-reina-de-las-ranas"] }
-      - { label: "Imagen", name: "image", widget: "image" }
-      - { label: "Borrador", name: "draft", widget: "boolean", default: false }
+      - { label: "Descripción", name: "body", widget: "text" }
+
+  - name: "espanolades"
+    label: "Españolades"
+    folder: "content/camisetas/espanolades"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descripción", name: "body", widget: "text" }
+
+  - name: "sex-love"
+    label: "Sex&Love"
+    folder: "content/camisetas/sex-love"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descripción", name: "body", widget: "text" }
+
+  - name: "que-se-casa"
+    label: "¡Que se casa!"
+    folder: "content/camisetas/que-se-casa"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descripción", name: "body", widget: "text" }
+
+  - name: "es-a-mi"
+    label: "¿Es a mí?"
+    folder: "content/camisetas/es-a-mi"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descripción", name: "body", widget: "text" }
+
+  - name: "ganga"
+    label: "Ganga con estilazo"
+    folder: "content/ganga"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Mensaje", name: "body", widget: "text" }
