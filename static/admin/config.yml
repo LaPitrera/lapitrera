@@ -59,3 +59,4 @@ collections:
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Mensaje", name: "body", widget: "text" }
+
