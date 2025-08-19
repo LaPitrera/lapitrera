@@ -1,14 +1,52 @@
-backend:
-  name: git-gateway
-  branch: main
-
-media_folder: "static/uploads"
-public_folder: "/uploads"
-
 collections:
-  - name: "camisetas"
-    label: "Camisetas"
-    folder: "content/camisetas"
+  - name: "temas"
+    label: "Temas"
+    folder: "content/temas"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nombre del tema", name: "title", widget: "string" }
+      - { label: "Descripción", name: "body", widget: "text" }
+
+  - name: "catalanades"
+    label: "Catalanades"
+    folder: "content/camisetas/catalanades"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descripción", name: "body", widget: "text" }
+
+  - name: "espanolades"
+    label: "Españolades"
+    folder: "content/camisetas/espanolades"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descripción", name: "body", widget: "text" }
+
+  - name: "sexlove"
+    label: "Sex&Love"
+    folder: "content/camisetas/sex-love"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descripción", name: "body", widget: "text" }
+
+  - name: "queseacasa"
+    label: "¡Que se casa!"
+    folder: "content/camisetas/que-se-casa"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descripción", name: "body", widget: "text" }
+
+  - name: "esami"
+    label: "¿Es a mí?"
+    folder: "content/camisetas/es-a-mi"
     create: true
     slug: "{{slug}}"
     fields:
@@ -23,12 +61,3 @@ collections:
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Mensaje", name: "body", widget: "text" }
-
-  - name: "temas"
-    label: "Temas"
-    folder: "content/temas"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Nombre del tema", name: "title", widget: "string" }
-      - { label: "Descripción", name: "body", widget: "text" }
