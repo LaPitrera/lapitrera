@@ -7,49 +7,54 @@ public_folder: "/uploads"
 
 collections:
   - name: "catalanades"
-    label: "Catalanades"
+    label: "Camisetas - Catalanades"
     folder: "content/camisetas/catalanades"
     create: true
     slug: "{{slug}}"
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Descripción", name: "body", widget: "text" }
+      - { label: "Imagen", name: "image", widget: "image" }
 
   - name: "espanolades"
-    label: "Españolades"
+    label: "Camisetas - Españolades"
     folder: "content/camisetas/espanolades"
     create: true
     slug: "{{slug}}"
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Descripción", name: "body", widget: "text" }
+      - { label: "Imagen", name: "image", widget: "image" }
 
   - name: "sex-love"
-    label: "Sex&Love"
+    label: "Camisetas - Sex & Love"
     folder: "content/camisetas/sex-love"
     create: true
     slug: "{{slug}}"
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Descripción", name: "body", widget: "text" }
+      - { label: "Imagen", name: "image", widget: "image" }
 
   - name: "que-se-casa"
-    label: "¡Que se casa!"
+    label: "Camisetas - ¡Que se casa!"
     folder: "content/camisetas/que-se-casa"
     create: true
     slug: "{{slug}}"
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Descripción", name: "body", widget: "text" }
+      - { label: "Imagen", name: "image", widget: "image" }
 
   - name: "es-a-mi"
-    label: "¿Es a mí?"
+    label: "Camisetas - ¿Es a mí?"
     folder: "content/camisetas/es-a-mi"
     create: true
     slug: "{{slug}}"
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Descripción", name: "body", widget: "text" }
+      - { label: "Imagen", name: "image", widget: "image" }
 
   - name: "ganga"
     label: "Ganga con estilazo"
@@ -59,4 +64,4 @@ collections:
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Mensaje", name: "body", widget: "text" }
-
+      - { label: "Imagen", name: "image", widget: "image" }
