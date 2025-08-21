@@ -2,3 +2,21 @@ baseURL = "https://lapitrera.com/"
 languageCode = "es"
 title = "La Pitrera"
 theme = "hugo-PaperMod"
+
+paginate = 10
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  assets = ["css/custom.css"]
+  defaultTheme = "dark"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
