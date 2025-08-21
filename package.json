@@ -1,0 +1,12 @@
+{
+  "name": "lapitrera",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0"
+  },
+  "scripts": {
+    "build": "hugo --gc --minify"
+  }
+}
