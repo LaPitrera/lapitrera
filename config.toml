@@ -1,10 +1,11 @@
 baseURL = "/"
 languageCode = "es"
 title = "La Pitrera"
-[pagination]
-  pagerSize = 10
 enableRobotsTXT = true
 defaultContentLanguage = "es"
+
+[pagination]
+  pagerSize = 10
 
 [module]
   [[module.imports]]
@@ -18,13 +19,35 @@ defaultContentLanguage = "es"
     [markup.goldmark.renderer]
       unsafe = true
 
-[params]
-  ShowReadingTime = false
-  ShowShareButtons = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
+[menu]
 
-  [params.homeInfoParams]
-    Title = "¡Sí, la pechera!"
-    Content = "Donde se te van los ojos... pero que no se te escape el mensaje ✨"
+  [[menu.main]]
+    identifier = "catalanades"
+    name = "Catalanades"
+    url = "/camisetas/catalanades/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "espanolades"
+    name = "Españolades"
+    url = "/camisetas/espanolades/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "sex-love"
+    name = "Sex & Love"
+    url = "/camisetas/sex-love/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "que-se-casa"
+    name = "¡Que se casa!"
+    url = "/camisetas/que-se-casa/"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "es-a-mi"
+    name = "¿Es a mí?"
+    url = "/camisetas/es-a-mi/"
+    weight = 5
+
