@@ -4,6 +4,7 @@ description = "Haz de tu día algo especial con camisetas únicas y packs comple
 +++
 
 Haz de tu día algo especial con nuestras **camisetas únicas** y packs completos de decoración a juego.  
-Nos das la idea y nosotras ponemos la chispa para crear un mundo alrededor de ella: diseños exclusivos, mensajes que marcan la diferencia y conjuntos pensados para que la ocasión brille como nunca.  
+Nos das la idea y nosotras ponemos la chispa para crear un mundo alrededor de ella: diseños exclusivos, mensajes que marcan la diferencia y conjuntos pensados para que la ocasión brille como nunca. y si no tienes una idea fija, explora todas nuestras colecciones de camisetas de La Pitrera.
 
 ✨ Atrévete, sorprende y disfruta. ¡Será un día inolvidable!
+
