@@ -1,8 +1,6 @@
 ---
 title: "Camiseta y packs chollazos a tutiplén"
-date: 2025-08-19
-draft: false
-descripcion: "Solo una prueba para desbloquear el CMS"
+descripcion: "Haz de tu día algo especial con camisetas únicas y packs completos de decoración a juego."
 ---
   
 Haz de tu día algo especial con nuestras camisetas únicas y packs completos de decoración a juego.
