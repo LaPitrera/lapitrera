@@ -16,7 +16,7 @@ collections:
       - { label: "Descripción", name: "body", widget: "text" }
 
   - name: "espanolades"
-    label: "Españolades"
+    label: "Españoladas"
     folder: "content/camisetas/espanolades"
     create: true
     slug: "{{slug}}"
@@ -25,7 +25,7 @@ collections:
       - { label: "Descripción", name: "body", widget: "text" }
 
   - name: "sex-love"
-    label: "Sex&Love"
+    label: "Sex & Love"
     folder: "content/camisetas/sex-love"
     create: true
     slug: "{{slug}}"
@@ -50,4 +50,3 @@ collections:
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Descripción", name: "body", widget: "text" }
-
