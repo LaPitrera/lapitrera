@@ -3,7 +3,8 @@
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.125.0"
+  HUGO_VERSION = "0.146.0"
+  HUGO_ENV = "production"
   HUGO_EXTENDED = "true"
   NODE_VERSION = "18"
 
@@ -12,3 +13,7 @@
   to = "/admin/"
   status = 301
   force = true
+
+[module]
+  [[module.imports]]
+    path = "github.com/adityatelange/hugo-PaperMod"
