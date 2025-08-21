@@ -1,4 +1,4 @@
-backend:
+backend: 
   name: git-gateway
   branch: main
 
@@ -14,6 +14,8 @@ collections:
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Descripción", name: "body", widget: "text" }
+      - { label: "Precio", name: "price", widget: "string", default: "19.90" }
+      - { label: "Imagen", name: "image", widget: "image" }
 
   - name: "espanolades"
     label: "Españoladas"
@@ -23,6 +25,8 @@ collections:
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Descripción", name: "body", widget: "text" }
+      - { label: "Precio", name: "price", widget: "string", default: "19.90" }
+      - { label: "Imagen", name: "image", widget: "image" }
 
   - name: "sex-love"
     label: "Sex & Love"
@@ -32,6 +36,8 @@ collections:
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Descripción", name: "body", widget: "text" }
+      - { label: "Precio", name: "price", widget: "string", default: "19.90" }
+      - { label: "Imagen", name: "image", widget: "image" }
 
   - name: "que-se-casa"
     label: "¡Que se casa!"
@@ -41,6 +47,8 @@ collections:
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Descripción", name: "body", widget: "text" }
+      - { label: "Precio", name: "price", widget: "string", default: "19.90" }
+      - { label: "Imagen", name: "image", widget: "image" }
 
   - name: "es-a-mi"
     label: "¿Es a mí?"
@@ -50,3 +58,5 @@ collections:
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Descripción", name: "body", widget: "text" }
+      - { label: "Precio", name: "price", widget: "string", default: "19.90" }
+      - { label: "Imagen", name: "image", widget: "image" }
