@@ -1,5 +1,5 @@
 body {
-  background: url("/uploads/fondo.jpg") no-repeat center center fixed;
+  static/uploads/fondo.jpg
   background-size: cover;
   background-color: #0a0a0f;
   color: #fff;
