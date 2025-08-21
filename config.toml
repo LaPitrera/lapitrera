@@ -3,20 +3,55 @@ languageCode = "es"
 title = "La Pitrera"
 theme = "hugo-PaperMod"
 
-paginate = 10
+# Navegación principal
+[[menu.main]]
+  identifier = "camisetas"
+  name = "Camisetas"
+  url = "/camisetas/"
+  weight = 1
 
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
+[[menu.main]]
+  identifier = "packs"
+  name = "Packs Chollazos"
+  url = "/packs/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "armario"
+  name = "Mi Armario"
+  url = "/armario/"
+  weight = 3
+
+[[menu.main]]
+  identifier = "contacto"
+  name = "Contacto"
+  url = "/contacto/"
+  weight = 4
 
 [params]
+  # Activar tu hoja de estilos personalizada
   assets = ["css/custom.css"]
+
+  # Tema claro/oscuro
   defaultTheme = "dark"
-  ShowReadingTime = true
+  disableThemeToggle = false
+
+  # Logo de la marca
+  logo = "/media/logo.png"
+
+  # Home Info
+  homeInfoParams = { Title = "¡Sí, la pechera!", Content = "Donde se te van los ojos... pero que no se te escape el mensaje ✨" }
+
+  # Metadatos sociales
+  social = true
+  ShowReadingTime = false
   ShowShareButtons = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
-  ShowToc = true
-  TocOpen = false
-  ShowWordCount = true
-  ShowRssButtonInSectionTermList = true
+
+[outputs]
+  home = [ "HTML", "RSS", "JSON" ]
+
+[markup.goldmark.renderer]
+  unsafe = true
