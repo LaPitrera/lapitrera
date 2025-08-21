@@ -1,57 +1,29 @@
-baseURL = "https://lapitrera.com/"
+baseURL = "/"
 languageCode = "es"
 title = "La Pitrera"
-theme = "hugo-PaperMod"
+paginate = 10
+enableRobotsTXT = true
+defaultContentLanguage = "es"
 
-# Navegación principal
-[[menu.main]]
-  identifier = "camisetas"
-  name = "Camisetas"
-  url = "/camisetas/"
-  weight = 1
+[module]
+  [[module.imports]]
+    path = "github.com/adityatelange/hugo-PaperMod"
 
-[[menu.main]]
-  identifier = "packs"
-  name = "Packs Chollazos"
-  url = "/packs/"
-  weight = 2
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 
-[[menu.main]]
-  identifier = "armario"
-  name = "Mi Armario"
-  url = "/armario/"
-  weight = 3
-
-[[menu.main]]
-  identifier = "contacto"
-  name = "Contacto"
-  url = "/contacto/"
-  weight = 4
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [params]
-  # Activar tu hoja de estilos personalizada
-  assets = ["css/custom.css"]
-
-  # Tema claro/oscuro
-  defaultTheme = "dark"
-  disableThemeToggle = false
-
-  # Logo de la marca
-  logo = "/media/logo.png"
-
-  # Home Info
-  homeInfoParams = { Title = "¡Sí, la pechera!", Content = "Donde se te van los ojos... pero que no se te escape el mensaje ✨" }
-
-  # Metadatos sociales
-  social = true
   ShowReadingTime = false
   ShowShareButtons = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
 
-[outputs]
-  home = [ "HTML", "RSS", "JSON" ]
-
-[markup.goldmark.renderer]
-  unsafe = true
+  [params.homeInfoParams]
+    Title = "¡Sí, la pechera!"
+    Content = "Donde se te van los ojos... pero que no se te escape el mensaje ✨"

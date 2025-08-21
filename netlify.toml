@@ -1,8 +1,14 @@
 [build]
-  command = "hugo --gc --minify"
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.146.0"
-  HUGO_ENABLEGITINFO = "true"
-  HUGO_ENV = "production"
+  HUGO_VERSION = "0.125.0"
+  HUGO_EXTENDED = "true"
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/admin"
+  to = "/admin/"
+  status = 301
+  force = true
